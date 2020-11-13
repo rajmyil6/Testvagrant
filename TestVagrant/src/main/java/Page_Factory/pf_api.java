@@ -23,7 +23,7 @@ public class pf_api extends pf_genericmethods {
 
 
 
-	public void apirest() throws Exception{
+public String apirest() throws Exception{
 		
 		RestAssured.baseURI="http://api.openweathermap.org";
 		
@@ -36,15 +36,16 @@ public class pf_api extends pf_genericmethods {
 		String b = re.getBody().asString();
 		System.out.println("Response :"+b );
 		
-		String temperature = re.jsonPath().getString("main").substring(25,30);
+		String temperature = re.jsonPath().getString("main").substring(59,65);
 		System.out.println("Temperature: "+temperature);
 		Double d = Double.parseDouble(temperature);
 		double tem = (d - 273.15);
 		DecimalFormat df = new DecimalFormat("#.##");
 		String apitemperature = df.format(tem).toString();
 		System.out.println("Temperature from API: "+apitemperature);
-		
-		
+		return apitemperature;
+	
 	}
+
 
 }

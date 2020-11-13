@@ -19,15 +19,11 @@ public class API_Script extends Basefunctions {
 		//login
 
 		
-		et =  es.startTest("Login");
-		log.info("this is login information");
-		
-		
-		 pf_api pa = new pf_api(w);
-		
-		
+		et =  es.startTest("Application");
+		log.info("this is application information");
+		pf_api pa = new pf_api(w);
 		pa.apirest();
-		log.info("Logged in successfully");
+		log.info("Application loads successfully");
 		
 
 	}

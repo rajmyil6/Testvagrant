@@ -43,8 +43,8 @@ public class Basefunctions {
 	
 	@BeforeSuite (groups = {"SMK"})
 	public void createreport(){		
-		es = new ExtentReports(".\\Report\\emSigner-DB_"+get_datetimestamp()+".html",false);
-		//es = new ExtentReports(".\\Report\\emSigner-DB_"+get_datetimestamp()+".html",false);
+		es = new ExtentReports(".\\Report\\testvagrant-DB_"+get_datetimestamp()+".html",false);
+		
 	}
 
 	@Parameters({"browser"})
@@ -121,7 +121,7 @@ public class Basefunctions {
 		File screenshotAs = sc.getScreenshotAs(OutputType.FILE);
 
 		String fpath = Utility.getpropertydetails("Screenshotpath") + "_"+ tcid + "_" + order + "_" + get_datetimestamp() +".png";
-		//String fpath = ".\\screenshots\\" + "_"+ tcid + "_" + order + "_" + get_datetimestamp() +".png";
+		
 		FileUtils.copyFile(screenshotAs, new File(fpath));
 		return fpath;
 
