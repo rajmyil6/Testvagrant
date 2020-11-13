@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="3" total="5" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="117154" started-at="2020-11-12T20:13:46 IST" finished-at="2020-11-12T20:15:43 IST">
+    <groups>
+      <group name="SMK">
+        <method signature="API_Script.apiscript()[pri:0, instance:Scripts.API_Script@b3ca52e]" name="apiscript" class="Scripts.API_Script"/>
+        <method signature="NDTV_Script.Login(java.util.Map)[pri:1, instance:Scripts.NDTV_Script@279fedbd]" name="Login" class="Scripts.NDTV_Script"/>
+      </group> <!-- SMK -->
+      <group name="REG">
+        <method signature="API_Script.apiscript()[pri:0, instance:Scripts.API_Script@b3ca52e]" name="apiscript" class="Scripts.API_Script"/>
+        <method signature="NDTV_Script.Login(java.util.Map)[pri:1, instance:Scripts.NDTV_Script@279fedbd]" name="Login" class="Scripts.NDTV_Script"/>
+      </group> <!-- REG -->
+    </groups>
+    <test name="ndtvcheck" duration-ms="117154" started-at="2020-11-12T20:13:46 IST" finished-at="2020-11-12T20:15:43 IST">
+      <class name="Scripts.API_Script">
+        <test-method status="PASS" signature="apiscript()[pri:0, instance:Scripts.API_Script@b3ca52e]" name="apiscript" duration-ms="6202" started-at="2020-11-12T20:15:34 IST" finished-at="2020-11-12T20:15:40 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- apiscript -->
+        <test-method status="PASS" signature="report(org.testng.ITestResult)[pri:0, instance:Scripts.API_Script@b3ca52e]" name="report" is-config="true" duration-ms="0" started-at="2020-11-12T20:15:40 IST" finished-at="2020-11-12T20:15:40 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=apiscript status=SUCCESS method=API_Script.apiscript()[pri:0, instance:Scripts.API_Script@b3ca52e] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- report -->
+      </class> <!-- Scripts.API_Script -->
+      <class name="Scripts.NDTV_Script">
+        <test-method status="PASS" signature="createreport()[pri:0, instance:Scripts.NDTV_Script@279fedbd]" name="createreport" is-config="true" duration-ms="402" started-at="2020-11-12T20:13:46 IST" finished-at="2020-11-12T20:13:46 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createreport -->
+        <test-method status="PASS" signature="launch(java.lang.String)[pri:0, instance:Scripts.NDTV_Script@279fedbd]" name="launch" is-config="true" duration-ms="11814" started-at="2020-11-12T20:13:46 IST" finished-at="2020-11-12T20:13:58 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[ch]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launch -->
+        <test-method status="PASS" signature="Login(java.util.Map)[pri:1, instance:Scripts.NDTV_Script@279fedbd]" name="Login" duration-ms="94956" started-at="2020-11-12T20:13:59 IST" data-provider="Valid_data" finished-at="2020-11-12T20:15:34 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{Order=1, Execute_Flag=Y, Script_Name=validname, TC_ID=t001, Submenuname=Weather, Searchinput=Bengaluru}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Login -->
+        <test-method status="PASS" signature="report(org.testng.ITestResult)[pri:0, instance:Scripts.NDTV_Script@279fedbd]" name="report" is-config="true" duration-ms="7" started-at="2020-11-12T20:15:34 IST" finished-at="2020-11-12T20:15:34 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=Login status=SUCCESS method=NDTV_Script.Login(java.util.Map)[pri:1, instance:Scripts.NDTV_Script@279fedbd] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- report -->
+        <test-method status="PASS" signature="closeapp()[pri:0, instance:Scripts.NDTV_Script@279fedbd]" name="closeapp" is-config="true" duration-ms="2953" started-at="2020-11-12T20:15:40 IST" finished-at="2020-11-12T20:15:43 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeapp -->
+      </class> <!-- Scripts.NDTV_Script -->
+    </test> <!-- ndtvcheck -->
+  </suite> <!-- Suite -->
+</testng-results>

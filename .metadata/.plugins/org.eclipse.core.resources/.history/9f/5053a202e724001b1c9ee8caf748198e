@@ -1,0 +1,609 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Suite" parallel="false" thread-count="1">
+	<parameter name="browser" value="ch"></parameter>
+
+ 	 <test name="ndtvcheck">
+		<groups>
+			<run>
+				<include name="SMK" />
+			</run>
+		</groups>
+		<classes>
+			<class name="Scripts.NDTV_Script" />
+			
+		</classes>
+	</test> 
+	
+	<!--  <test name="LoginScript">
+		<groups>
+			<run>
+				<include name="SMK" />
+			</run>
+		</groups>
+		<classes>
+			<class name="Scripts.Login_Script" />
+		</classes>
+	</test> --> 
+	
+<!-- <test name="Logout">
+		<groups>
+			<run>
+				<include name="SMK" />
+			</run>
+		</groups>
+		<classes>
+			<class name="Scripts.Login_Script" />
+				<class name="Scripts.Logout_Script" />
+			
+		</classes>
+	</test>
+	
+	 <test name="createDoc">
+		<groups>
+			<run>
+				<include name="SMK" />
+			</run>
+		</groups>
+		<classes>
+		<class name="Scripts.Login_Script" />
+			<class name="Scripts.CreateDoc_Script" />
+			
+		</classes>
+	</test>  
+	 
+	    <test name="createDoceSign">
+		<groups>
+			<run>
+				<include name="SMK" />
+			</run>
+		</groups>
+		<classes>
+		<class name="Scripts.Login_Script" />
+			<class name="Scripts.CreateDoceSign_Script" />
+			
+		</classes>
+	</test>
+	<test name="createDocSendPage">
+		<groups>
+			<run>
+				<include name="SMK" />
+			</run>
+		</groups>
+		<classes>
+		<class name="Scripts.Login_Script" />
+		<class name="Scripts.CreateDocSendPage_Script" />
+			
+		</classes>
+	</test>
+	
+	 <test name="createDocMultiR">
+		<groups>
+			<run>
+				<include name="SMK" />
+			</run>
+		</groups>
+		<classes>
+		 <class name="Scripts.Login_Script" /> 
+			<class name="Scripts.CreateDocMltpleR_Script" />
+			
+		</classes>
+	</test> 
+	
+	<test name="createDocRecall">
+		<groups>
+			<run>
+				<include name="SMK" />
+			</run>
+		</groups>
+		<classes>
+		<class name="Scripts.Login_Script" />
+			<class name="Scripts.CreateDocRecall_Script" />
+			
+		</classes>
+	</test>
+	
+	<test name="createDocSaveToDraft">
+		<groups>
+			<run>
+				<include name="SMK" />
+			</run>
+		</groups>
+		<classes>
+		<class name="Scripts.Login_Script" />
+			<class name="Scripts.CreateDocSaveToDraft_Script" />
+			
+		</classes>
+	 </test> -->
+	
+	<!-- <test name="Plan">
+		<groups>
+			<run>
+				<include name="SMK" />
+			</run>
+		</groups>
+		<classes>
+			<class name="Scripts.PlansNPricing_Script" />
+			
+		</classes>
+	</test>-->
+	
+	   <!-- <test name="Form16">
+		<groups>
+			<run>
+				<include name="SMK" />
+			</run>
+		</groups>
+		<classes>
+			<class name="Scripts.Login_Script" />
+			<class name="Scripts.Form16Sign_Script" />	
+		</classes>
+	</test> -->
+
+	 <!--   <test name="Form16ChooseTemp">
+		<groups>
+			<run>
+				<include name="SMK" />
+			</run>
+		</groups>
+		<classes>
+			<class name="Scripts.Login_Script" />
+			<class name="Scripts.Form16ChooseTemp_Script" />	
+		</classes> 
+	</test> 
+	
+	    <test name="Encrypt">
+		<groups>
+			<run>
+				<include name="SMK" />
+			</run>
+		</groups>
+		<classes>
+			<class name="Scripts.Login_Script" />
+			<class name="Scripts.Encrypt_Script" />
+		</classes>
+	</test>
+
+  	    <test name="Decrypt">
+		<groups>
+			<run>
+				<include name="SMK" />
+			</run>
+		</groups>
+		<classes>
+			<class name="Scripts.Login_Script" />
+			<class name="Scripts.Decrypt_Script" />
+		</classes>
+	</test> -->
+	
+	   <!--<test name="DecryptMultipleFiles">
+		<groups>
+			<run>
+				<include name="SMK" />
+			</run>
+		</groups>
+		<classes>
+			<class name="Scripts.Login_Script" />
+			<class name="Scripts.DecryptMultipleFiles_Script" />
+		</classes>
+	</test>
+
+	
+	  <test name="UploadDocdsign">
+		<groups>
+			<run>
+				<include name="SMK" />
+			</run>
+		</groups>
+		<classes>
+			<class name="Scripts.Login_Script" />
+			<class name="Scripts.UploadDoc_Script" />
+		</classes>
+	</test> 
+	
+	 <test name="UploadDoceSigntre">
+		<groups>
+			<run>
+				<include name="SMK" />
+			</run>
+		</groups>
+		<classes>
+			<class name="Scripts.Login_Script" />
+			<class name="Scripts.UploadDoceSigntre_Script" />
+		</classes>
+	</test>-->
+	
+	   <!-- <test name="UploadDoceSigntreTmplte">
+		<groups>
+			<run>
+				<include name="SMK" />
+			</run>
+		</groups>
+		<classes>
+			<class name="Scripts.Login_Script" />
+			<class name="Scripts.UpldDoceSigntreTmplte_Script" />
+		</classes>
+	</test> 
+	
+	  <test name="upldDocIntrnlUser">
+		<groups>
+			<run>
+				<include name="SMK" />
+			</run>
+		</groups>
+		<classes>
+			 <class name="Scripts.Login_Script" />
+			<class name="Scripts.UpldDocIntrnlUser_Script" />	
+		</classes>
+	</test>-->
+	
+	 <!-- <test name="upldDocIntrnlUsereSignature">
+		<groups>
+			<run>
+				<include name="SMK" />
+			</run>
+		</groups>
+		<classes>
+			 <class name="Scripts.Login_Script" />
+			<class name="Scripts.UpldDocIntrnlUsereSign_Script" />	
+		</classes>
+	</test> 
+	
+	 <test name="upldDocRecall">
+		<groups>
+			<run>
+				<include name="SMK" />
+			</run>
+		</groups>
+		<classes>
+			<class name="Scripts.Login_Script" />
+			<class name="Scripts.UpldDocRecall_Script" />	
+		</classes>
+	</test>  
+	
+	<test name="upldDocParallel">
+		<groups>
+			<run>
+				<include name="SMK" />
+			</run>
+		</groups>
+		<classes>
+			<class name="Scripts.Login_Script" />
+			<class name="Scripts.UploadDocParallel_Script" />	
+		</classes>
+	</test>
+	
+	<test name="upldDocMultipleSign">
+		<groups>
+			<run>
+				<include name="SMK" />
+			</run>
+		</groups>
+		<classes>
+			<class name="Scripts.Login_Script" />
+			<class name="Scripts.UploadDocmultiplesignatory_Script" />	
+		</classes>
+	</test>
+	
+	<test name="upldMultpleDocSign">
+		<groups>
+			<run>
+				<include name="SMK" />
+			</run>
+		</groups>
+		<classes>
+			<class name="Scripts.Login_Script" />
+			<class name="Scripts.UploadMultipleDoc_Script" />	
+		</classes>
+	</test>
+	
+	<test name="upldDocIntrReview">
+		<groups>
+			<run>
+				<include name="SMK" />
+			</run>
+		</groups>
+		<classes>
+			<class name="Scripts.Login_Script" /> 
+			<class name="Scripts.UploadDocIntrReviwer_Script" />	
+		</classes>
+	</test> 
+	
+  <test name="BulkDoc">
+		<groups>
+			<run>
+				<include name="SMK" />
+			</run>
+		</groups>
+		<classes>
+			<class name="Scripts.Login_Script" />
+			<class name="Scripts.BulkDoc_Script" />
+		</classes>
+	</test>
+	
+	  	  <test name="BulkDocChooseTemp">
+		<groups>
+			<run>
+				<include name="SMK" />
+			</run>
+		</groups>
+		<classes>
+			<class name="Scripts.Login_Script" />
+			<class name="Scripts.BulkDocChooseTemp_Script" />	
+		</classes> 
+	</test>-->
+	
+	 <!--<test name="BulkDocChooseTempAdPwd">
+		<groups>
+			<run>
+				<include name="SMK" />
+			</run>
+		</groups>
+		<classes>
+			<class name="Scripts.Login_Script" />
+			<class name="Scripts.BulkDocAdvnceSetng_Script" />	
+		</classes> 
+	</test>
+	
+	<test name="BulkDocChooseTempAdBlkPwd">
+		<groups>
+			<run>
+				<include name="SMK" />
+			</run>
+		</groups>
+		<classes>
+			<class name="Scripts.Login_Script" />
+			<class name="Scripts.BulkDocAdvnceSetngBlkPwd_Script" />	
+		</classes> 
+	</test> -->
+	
+	 <!-- <test name="Docstore">
+		<groups>
+			<run>
+				<include name="SMK" />
+			</run>
+		</groups>
+		<classes>
+			<class name="Scripts.Login_Script" />
+			<class name="Scripts.Docstore_Script" />
+		</classes>
+	</test> 
+
+	 <test name="Settings">
+		<groups>
+			<run>
+				<include name="SMK" />
+			</run>
+		</groups>
+		<classes>
+			<class name="Scripts.Login_Script" />
+			<class name="Scripts.Setting_Script" />
+		</classes>
+	</test> -->
+	  <!--   <test name="ValidateFile">
+		<groups>
+			<run>
+				<include name="SMK" />
+			</run>
+		</groups>
+		<classes>
+			<class name="Scripts.Login_Script" />
+			<class name="Scripts.validatesignedfile" />
+		</classes>
+	</test>
+
+	   <test name="AdminSetting">
+		<groups>
+			<run>
+				<include name="SMK" />
+			</run>
+		</groups>
+		<classes>
+			<class name="Scripts.Login_Script" />
+			<class name="Scripts.AdminSettings_Script" />
+		</classes>
+	</test>
+	
+	   <test name="workflowDocUpld">
+		<groups>
+			<run>
+				<include name="SMK" />
+			</run>
+		</groups>
+		<classes>
+			<class name="Scripts.Login_Script" />
+			<class name="Scripts.WrkflwsDocUpld_Script" />		
+		</classes>
+	</test>
+	
+	 <test name="ManageWfFlexi">
+		<groups>
+			<run>
+				<include name="SMK" />
+			</run>
+		</groups>
+		<classes>
+			<class name="Scripts.Login_Script" />
+			<class name="Scripts.ManageWrkflwFlexi_Script" />
+		</classes>
+	</test>
+	
+	  <test name="workflow">
+		<groups>
+			<run>
+				<include name="SMK" />
+			</run>
+		</groups>
+		<classes>
+			<class name="Scripts.Login_Script" />
+			<class name="Scripts.Workflows_Script" />	
+		</classes>
+	</test>
+	
+	  <test name="workfloweSign">
+		<groups>
+			<run>
+				<include name="SMK" />
+			</run>
+		</groups>
+		<classes>
+			<class name="Scripts.Login_Script" />
+			<class name="Scripts.WorkflowseSign_Script" />	
+		</classes>
+	</test>
+	
+   <test name="ManageWfActivity">
+		<groups>
+			<run>
+				<include name="SMK" />
+			</run>
+		</groups>
+		<classes>
+			<class name="Scripts.Login_Script" />
+			<class name="Scripts.ManageWrkflwActivity_Script" />
+		</classes>
+	</test>  -->
+	
+	 <!--  <test name="reports">
+		<groups>
+			<run>
+				<include name="SMK" />
+			</run>
+		</groups>
+		<classes>
+			<class name="Scripts.Login_Script" />
+			<class name="Scripts.Reports_Script" />
+		</classes>
+	</test> 
+	
+	  <test name="wfExcel">
+		<groups>
+			<run>
+				<include name="SMK" />
+			</run>
+		</groups>
+		<classes>
+			<class name="Scripts.Login_Script" />
+			<class name="Scripts.AdminWFExternalExcel_Script" />
+		</classes>
+	</test> 
+
+	 <test name="wfExcelDraft">
+		<groups>
+			<run>
+				<include name="SMK" />
+			</run>
+		</groups>
+		<classes>
+			<class name="Scripts.Login_Script" />
+			<class name="Scripts.AdminWFExternalExcelDraft_Script" />
+		</classes>
+	</test>-->
+	
+	<!--<test name="onlineSign">
+		<groups>
+			<run>
+				<include name="SMK" />
+			</run>
+		</groups>
+		<classes>
+			<class name="Scripts.Login_Script" />
+			<class name="Scripts.OnlineSigning_Script" />
+		</classes>
+	</test>
+	 <test name="quickSetupWorkflow">
+		<groups>
+			<run>
+				<include name="SMK" />
+			</run>
+		</groups>
+		<classes>
+			<class name="Scripts.Login_Script" />
+			<class name="Scripts.QuickSetupworkflow_Script" />
+		</classes>
+	</test>-->
+	
+	<!--<test name="Report">
+		<groups>
+			<run>
+				<include name="SMK" />
+			</run>
+		</groups>
+		<classes>
+			<class name="Scripts.Login_Script" />
+			<class name="Scripts.ReportPage_Script" />
+		</classes>
+	</test>
+	
+	<test name="workflow">
+		<groups>
+			<run>
+				<include name="SMK" />
+			</run>
+		</groups>
+		<classes>
+			<class name="Scripts.Login_Script" />
+			<class name="Scripts.ManageWorkflow_Script" />
+		</classes>
+	</test>
+	
+	<test name="Dashboard">
+		<groups>
+			<run>
+				<include name="SMK" />
+			</run>
+		</groups>
+		<classes>
+			<class name="Scripts.Login_Script" />
+			<class name="Scripts.Dashboard_Script"/>
+		</classes>
+	</test>-->
+	
+	<!-- <test name="frgtPswd">
+		<groups>
+			<run>
+				<include name="SMK" />
+			</run>
+		</groups>
+		<classes>
+			<class name="Scripts.Forgotpassword_Script"/>
+		</classes>
+	</test> -->
+	
+	<!-- <test name="signerAttachment">
+		<groups>
+			<run>
+				<include name="SMK" />
+			</run>
+		</groups>
+		<classes>
+		<class name="Scripts.Login_Script" />
+			<class name="Scripts.Signerattachments_Script"/>
+		</classes>
+	</test>
+	
+	 <test name="wfDocProtection">
+		<groups>
+			<run>
+				<include name="SMK" />
+			</run>
+		</groups>
+		<classes>
+			<class name="Scripts.Login_Script" />
+			<class name="Scripts.AdminWFDocumnetPrtctn_Script" />
+		</classes>
+	</test>  
+	
+	 <test name="wfSignrAttachment">
+		<groups>
+			<run>
+				<include name="SMK" />
+			</run>
+		</groups>
+		<classes>
+			<class name="Scripts.Login_Script" />
+			<class name="Scripts.AdminWFSignerAttachment_Script" />
+		</classes>
+	</test> -->
+	
+</suite> <!-- Suite -->

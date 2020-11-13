@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="1" guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <parameter name="browser" value="ch"/>
+  <test thread-count="1" name="ndtvcheck(failed)">
+    <groups>
+      <run>
+        <include name="SMK"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="Scripts.NDTV_Script">
+        <methods>
+          <include name="createreport"/>
+          <include name="launch"/>
+          <include name="closeapp"/>
+          <include name="Login" invocation-numbers="0"/>
+          <include name="report"/>
+        </methods>
+      </class> <!-- Scripts.NDTV_Script -->
+    </classes>
+  </test> <!-- ndtvcheck(failed) -->
+</suite> <!-- Failed suite [Suite] -->

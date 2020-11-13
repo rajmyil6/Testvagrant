@@ -1,0 +1,149 @@
+<html>
+<head>
+<title>TestNG:  createDoc</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>createDoc</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>14/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Fri Jul 03 12:13:27 IST 2020</td>
+</tr>
+<tr><td>Total time:</td><td>513 seconds (513167 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td>SMK </td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='Scripts.CreateDoc_Script.CreateDocvalidatn()'><b>CreateDocvalidatn</b><br>Test class: Scripts.CreateDoc_Script<br>Parameters: {Order=1, Execute_Flag=Y, Uname=testtm67@gmail.com, Script_Name=SendReviewCheck, TC_ID=t1, Expected_Result=Please assign reviewer to review documents, Pwd=111111, Actual Result=Please assign reviewer to review documents}</td>
+<td></td>
+<td>29</td>
+<td>Scripts.CreateDoc_Script@49dc7102</td></tr>
+<tr>
+<td title='Scripts.CreateDoc_Script.CreateDocvalidatn()'><b>CreateDocvalidatn</b><br>Test class: Scripts.CreateDoc_Script<br>Parameters: {Order=1, Execute_Flag=Y, Uname=testtm67@gmail.com, Script_Name=SaveToDraftCheck, TC_ID=t2, Expected_Result=Please write something to create documents, Pwd=111111, Actual Result=Please write something to create documents}</td>
+<td></td>
+<td>5</td>
+<td>Scripts.CreateDoc_Script@49dc7102</td></tr>
+<tr>
+<td title='Scripts.CreateDoc_Script.CreateDocvalidatn()'><b>CreateDocvalidatn</b><br>Test class: Scripts.CreateDoc_Script<br>Parameters: {Order=1, Execute_Flag=Y, Uname=testtm67@gmail.com, Script_Name=withoutReviewer, TC_ID=t3, Expected_Result=Please select reviewer to Review Document, Pwd=111111, Actual Result=Please select reviewer to Review Document}</td>
+<td></td>
+<td>13</td>
+<td>Scripts.CreateDoc_Script@49dc7102</td></tr>
+<tr>
+<td title='Scripts.CreateDoc_Script.CreateDocvalidatn()'><b>CreateDocvalidatn</b><br>Test class: Scripts.CreateDoc_Script<br>Parameters: {Order=1, Execute_Flag=Y, Uname=testtm67@gmail.com, Script_Name=savebtnWithoutName, TC_ID=t4, Expected_Result=Please enter Name, Pwd=111111, Actual Result=Please enter Name}</td>
+<td></td>
+<td>13</td>
+<td>Scripts.CreateDoc_Script@49dc7102</td></tr>
+<tr>
+<td title='Scripts.CreateDoc_Script.CreateDocvalidatn()'><b>CreateDocvalidatn</b><br>Test class: Scripts.CreateDoc_Script<br>Parameters: {Order=1, Execute_Flag=Y, Uname=testtm67@gmail.com, Script_Name=savebtnWithoutEmail, TC_ID=t5, Expected_Result=Please enter Email ID, Pwd=111111, Actual Result=Please enter Email ID}</td>
+<td></td>
+<td>7</td>
+<td>Scripts.CreateDoc_Script@49dc7102</td></tr>
+<tr>
+<td title='Scripts.CreateDoc_Script.CreateDocvalidatn()'><b>CreateDocvalidatn</b><br>Test class: Scripts.CreateDoc_Script<br>Parameters: {Order=1, Execute_Flag=Y, Uname=testtm67@gmail.com, Script_Name=savebtnWithInvalidEmail, TC_ID=t6, Expected_Result=Please enter valid email id, Pwd=111111, Actual Result=Please enter valid email id}</td>
+<td></td>
+<td>4</td>
+<td>Scripts.CreateDoc_Script@49dc7102</td></tr>
+<tr>
+<td title='Scripts.CreateDoc_Script.CreateDocvalidatn()'><b>CreateDocvalidatn</b><br>Test class: Scripts.CreateDoc_Script<br>Parameters: {Order=1, Execute_Flag=Y, Uname=testtm67@gmail.com, Script_Name=savebtnWithValidEmail, TC_ID=t7, Expected_Result=NA, Pwd=111111, Actual Result=null}</td>
+<td></td>
+<td>19</td>
+<td>Scripts.CreateDoc_Script@49dc7102</td></tr>
+<tr>
+<td title='Scripts.CreateDoc_Script.CreateDocvalidatn()'><b>CreateDocvalidatn</b><br>Test class: Scripts.CreateDoc_Script<br>Parameters: {Order=1, Execute_Flag=Y, Uname=testtm67@gmail.com, Script_Name=markReviewedWithoutContent, TC_ID=t8, Expected_Result=Please write something to create documents, Pwd=111111, Actual Result=Please write something to create documents}</td>
+<td></td>
+<td>9</td>
+<td>Scripts.CreateDoc_Script@49dc7102</td></tr>
+<tr>
+<td title='Scripts.CreateDoc_Script.CreateDocvalidatn()'><b>CreateDocvalidatn</b><br>Test class: Scripts.CreateDoc_Script<br>Parameters: {Order=1, Execute_Flag=Y, Uname=testtm67@gmail.com, Script_Name=saveDrftWithoutContent, TC_ID=t9, Expected_Result=Please write something to create documents, Pwd=111111, Actual Result=Please write something to create documents}</td>
+<td></td>
+<td>23</td>
+<td>Scripts.CreateDoc_Script@49dc7102</td></tr>
+<tr>
+<td title='Scripts.CreateDoc_Script.CreateDocvalidatn()'><b>CreateDocvalidatn</b><br>Test class: Scripts.CreateDoc_Script<br>Parameters: {Order=1, Execute_Flag=Y, Uname=testtm67@gmail.com, Script_Name=SaveToDraft, TC_ID=t10, Expected_Result=New Version Saved, Pwd=111111, Actual Result=New Version Saved}</td>
+<td></td>
+<td>0</td>
+<td>Scripts.CreateDoc_Script@49dc7102</td></tr>
+<tr>
+<td title='Scripts.CreateDoc_Script.CreateDocvalidatn()'><b>CreateDocvalidatn</b><br>Test class: Scripts.CreateDoc_Script<br>Parameters: {Order=1, Execute_Flag=Y, Uname=testtm67@gmail.com, Script_Name=newVersionWithoutCmnt, TC_ID=t11, Expected_Result=Please enter valid comment, Pwd=111111, Actual Result=Please enter valid comment}</td>
+<td></td>
+<td>0</td>
+<td>Scripts.CreateDoc_Script@49dc7102</td></tr>
+<tr>
+<td title='Scripts.CreateDoc_Script.CreateDocvalidatn()'><b>CreateDocvalidatn</b><br>Test class: Scripts.CreateDoc_Script<br>Parameters: {Order=1, Execute_Flag=Y, Uname=testtm67@gmail.com, Script_Name=newVersionMarkRevd, TC_ID=t12, Expected_Result=Document Reviewed Successfully, Pwd=111111, Actual Result=null}</td>
+<td></td>
+<td>0</td>
+<td>Scripts.CreateDoc_Script@49dc7102</td></tr>
+<tr>
+<td title='Scripts.Login_Script.Login()'><b>Login</b><br>Test class: Scripts.Login_Script<br>Parameters: {Order=1, Execute_Flag=Y, Uname=iphone1@in.com, Script_Name=ValidLogin, TC_ID=t001, Expected_Result=Valid credentials, Pwd=111111, Actual Result=null}</td>
+<td></td>
+<td>40</td>
+<td>Scripts.Login_Script@7671cb68</td></tr>
+<tr>
+<td title='Scripts.CreateDoc_Script.createDocument()'><b>createDocument</b><br>Test class: Scripts.CreateDoc_Script</td>
+<td></td>
+<td>295</td>
+<td>Scripts.CreateDoc_Script@49dc7102</td></tr>
+</table><p>
+</body>
+</html>

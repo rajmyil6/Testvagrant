@@ -1,0 +1,106 @@
+package Scripts;
+
+import org.apache.log4j.Logger;
+import org.apache.log4j.PropertyConfigurator;
+import org.testng.annotations.Test;
+
+import Generic_Library.Basefunctions;
+import Generic_Library.Utility;
+import Page_Factory.pf_ndtvhomepage;
+import Page_Factory.pf_loginpage;
+
+
+
+public class Dashboard_Script extends Basefunctions {
+
+	final static Logger log = Logger.getLogger(Dashboard_Script.class);
+
+	@Test(priority=1,groups={"SMK","REG"})
+	public void dashboardPage() throws Exception{
+
+
+		String sheetName ="Dashboard";
+		System.out.println(sheetName);
+		pf_ndtvhomepage ph = new pf_ndtvhomepage(w);
+
+		ph.dashboardpageftn();
+
+//		ph.verifytxt();	
+		//cv_equals(actualTxt,exp,scriptname);
+		//ph.verifySubDocTxt();
+		//cv_equals(actlDocStrTxt,exp,scriptname);
+	}
+	
+	
+	/*@Test(enabled=true,priority=2,groups={"SMK","REG"})
+	public static void draftsAction() throws Exception{	
+		
+		pf_dashboardpage d=new pf_dashboardpage(w);
+		String cmt=Utility.getpropertydetails("Comment");
+		String uptdcmt=Utility.getpropertydetails("updatedComment");
+		String id=Utility.getpropertydetails("Email");
+		String msg=Utility.getpropertydetails("EmailMsg");
+		et =  es.startTest("DashBoard- Drafts action");
+		d.draftAction(cmt,uptdcmt,id,msg);	
+	}
+	
+	@Test(enabled=true,priority=3,groups={"SMK","REG"})
+	public static void draftsBulkAction() throws Exception{	
+		
+		pf_dashboardpage d=new pf_dashboardpage(w);
+		String cmt=Utility.getpropertydetails("Comment");
+		String uptdcmt=Utility.getpropertydetails("updatedComment");
+		String id=Utility.getpropertydetails("Email");
+		String msg=Utility.getpropertydetails("EmailMsg");
+		et =  es.startTest("DashBoard- Drafts bulk action");
+		d.draftBlkAction(cmt,uptdcmt,id,msg);	
+	}
+	
+	@Test(enabled=true,priority=4,groups={"SMK","REG"})
+	public static void completedAction() throws Exception{	
+		
+		pf_dashboardpage d=new pf_dashboardpage(w);
+		String cmt=Utility.getpropertydetails("Comment");
+		String uptdcmt=Utility.getpropertydetails("updatedComment");
+		String id=Utility.getpropertydetails("Email");
+		String msg=Utility.getpropertydetails("EmailMsg");
+		et =  es.startTest("DashBoard- Completed action");
+		d.compltdAction(cmt,uptdcmt,id,msg);	
+	}
+	
+	@Test(enabled=true,priority=5,groups={"SMK","REG"})
+	public static void recall() throws Exception{	
+		
+		pf_dashboardpage d=new pf_dashboardpage(w);
+		
+		et =  es.startTest("DashBoard- Recall");
+		d.recall();	
+	}
+	
+	@Test(enabled=true,priority=6,groups={"SMK","REG"})
+	public static void decline() throws Exception{	
+		
+		pf_dashboardpage d=new pf_dashboardpage(w);		
+		et =  es.startTest("DashBoard- Decline");
+		d.decline();	
+	}
+	
+	@Test(enabled=true,priority=7,groups={"SMK","REG"})
+	public static void waitingothers() throws Exception{	
+		
+		pf_dashboardpage d=new pf_dashboardpage(w);
+		String cmt=Utility.getpropertydetails("Comment");
+		String uptdcmt=Utility.getpropertydetails("updatedComment");
+		String id=Utility.getpropertydetails("Email");
+		String msg=Utility.getpropertydetails("EmailMsg");
+		et =  es.startTest("DashBoard- Waiting For Others");
+		d.waitingForOthers(cmt,uptdcmt,id,msg);	
+	}
+	
+	@Test(enabled=true,priority=8,groups={"SMK","REG"})
+	public static void ShareWithMe() throws Exception{			
+		pf_dashboardpage d=new pf_dashboardpage(w);		
+		et =  es.startTest("DashBoard- ShareWithMe");
+		d.shareWithMe();	
+	}*/
+}

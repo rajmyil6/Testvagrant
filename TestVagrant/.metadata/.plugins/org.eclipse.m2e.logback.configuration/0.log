@@ -1,0 +1,30 @@
+2020-07-26 09:23:14,162 [Worker-3: Loading available Gradle versions] INFO  c.g.t.t.d.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
+2020-07-26 09:45:43,249 [Worker-3: Loading available Gradle versions] INFO  c.g.t.t.d.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2020-07-26 09:47:36,664 [Worker-0: Loading available Gradle versions] INFO  c.g.t.t.d.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2020-11-11 14:04:25,934 [Worker-1: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
+2020-11-11 14:19:18,769 [Worker-32: Creating project "testvagrant"] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: Testvagrant:testvagrant:0.0.1-SNAPSHOT @ C:\Users\20112\Documents\Testvag\TestVagrant\testvagrant\pom.xml.
+2020-11-11 14:19:20,638 [Worker-32: Creating project "testvagrant"] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /testvagrant/src/main/java
+2020-11-11 14:19:20,640 [Worker-32: Creating project "testvagrant"] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /testvagrant/src/main/resources
+2020-11-11 14:19:20,642 [Worker-32: Creating project "testvagrant"] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /testvagrant/src/test/java
+2020-11-11 14:19:20,642 [Worker-32: Creating project "testvagrant"] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /testvagrant/src/test/resources
+2020-11-11 14:19:23,740 [Worker-35: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-11-11 14:19:23,750 [Worker-35: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2020-11-11 14:19:23,753 [Worker-35: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-11-11 14:19:23,755 [Worker-35: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2020-11-11 14:23:03,079 [Worker-38: Building] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: Testvagrant:testvagrant:0.0.1-SNAPSHOT @ C:\Users\20112\Documents\Testvag\TestVagrant\test\pom.xml.
+2020-11-11 14:23:04,241 [Worker-38: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-11-11 14:23:04,247 [Worker-38: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2020-11-11 14:23:04,250 [Worker-38: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-11-11 14:23:04,253 [Worker-38: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2020-11-11 14:23:25,369 [Worker-39: Importing Maven projects] ERROR o.e.m.c.i.p.ProjectConfigurationManager - Project test already exists
+2020-11-11 14:23:25,377 [Worker-39: Importing Maven projects] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Imported and configured 1 project(s) in 0 sec
+2020-11-11 14:25:07,133 [Worker-37: Building] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: Testvagrant:testvagrant:0.0.1-SNAPSHOT @ C:\Users\20112\Documents\Testvag\TestVagrant\test\pom.xml.
+2020-11-11 14:25:08,432 [Worker-37: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-11-11 14:25:08,435 [Worker-37: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2020-11-11 14:25:09,313 [Worker-37: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-11-11 14:25:09,335 [Worker-34: Updating Maven Dependencies] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: Testvagrant:testvagrant:0.0.1-SNAPSHOT @ C:\Users\20112\Documents\Testvag\TestVagrant\test\pom.xml.
+2020-11-11 14:25:09,340 [Worker-37: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2020-11-11 14:25:10,906 [Worker-39: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-11-11 14:25:10,914 [Worker-39: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2020-11-11 14:25:10,917 [Worker-39: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-11-11 14:25:10,920 [Worker-39: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource

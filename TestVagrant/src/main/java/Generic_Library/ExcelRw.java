@@ -1,0 +1,92 @@
+package Generic_Library;
+
+import java.io.FileInputStream;
+import java.io.FileOutputStream;
+
+import org.apache.poi.xssf.usermodel.XSSFCell;
+import org.apache.poi.xssf.usermodel.XSSFSheet;
+import org.apache.poi.xssf.usermodel.XSSFWorkbook;
+
+public class ExcelRw {
+
+	FileInputStream fs;
+	XSSFWorkbook wb;
+
+	//	Initializing the Excel
+
+	public ExcelRw(String fpath) throws Exception{
+
+		fs = new FileInputStream(fpath);
+		wb = new XSSFWorkbook(fs);
+	}
+
+	//	Get the Row count
+
+	public int getrowcount(String sheetname){
+
+		XSSFSheet x = wb.getSheet(sheetname);
+		return x.getLastRowNum();
+	}
+
+	//	Get the Column count
+
+	public int getcolumncount(String sheetname){
+
+		XSSFSheet x = wb.getSheet(sheetname);
+		return x.getRow(0).getLastCellNum();
+	}	
+	//	Read cell values
+
+	@SuppressWarnings("deprecation")
+	public String readvalue(int ri,int ci,String sheetname){
+
+		XSSFSheet x = wb.getSheet(sheetname);
+
+		XSSFCell xc = x.getRow(ri).getCell(ci);
+		System.out.println("XC : " +xc);
+		String cellvalue = null;
+
+		if(xc.getCellTypeEnum() == xc.getCellTypeEnum().STRING){
+
+			cellvalue = xc.getStringCellValue();
+			//System.out.println(cellvalue);
+
+		}else if(xc.getCellTypeEnum() == xc.getCellTypeEnum().NUMERIC){
+
+			cellvalue = String.valueOf(xc.getNumericCellValue());
+
+		}else if(xc.getCellTypeEnum() == xc.getCellTypeEnum().BLANK && xc.getCellTypeEnum()==xc.getCellTypeEnum().ERROR){
+
+			cellvalue = "";
+		}
+		return cellvalue;
+	}
+
+	//	Write cell values
+
+	public void writevalue(int ri,int ci,String sheetname,String input) throws Exception{
+
+		XSSFSheet x = wb.getSheet(sheetname);
+		//System.out.println("ExcelRe"+input);
+		x.getRow(ri).getCell(ci).setCellValue(input);
+
+
+	}
+
+	//Save and close the streams
+
+	public void saveclose(String fpath) throws Exception{
+
+		FileOutputStream fo = new FileOutputStream(fpath);
+
+		//	Write excel
+		wb.write(fo);
+
+		//		Close stream
+
+		fo.close();
+		fs.close();
+	}
+
+
+}

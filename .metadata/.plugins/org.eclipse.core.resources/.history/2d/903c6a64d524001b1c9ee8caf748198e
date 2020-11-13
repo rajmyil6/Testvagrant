@@ -1,0 +1,33 @@
+package Page_Factory;
+
+import org.apache.log4j.Logger;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.support.PageFactory;
+
+import io.restassured.RestAssured;
+import io.restassured.response.Response;
+import io.restassured.specification.RequestSpecification;
+
+public class pf_loginpage extends pf_genericmethods {
+
+	final static Logger log = Logger.getLogger(pf_loginpage.class);
+	
+	public pf_loginpage(WebDriver driver){
+
+		PageFactory.initElements(driver, this);
+	}
+
+
+
+	public void APIrest(String uname,String pass) throws Exception{
+		
+		RestAssured.baseURI="https://openweathermap.org/current";
+		
+//		Request Object
+		RequestSpecification rs = RestAssured.given();
+		
+//		Response Object
+		Response re = rs.request();
+	}
+
+}
